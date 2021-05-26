@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+</head>
+<body>
+
+            <h1>AULA 34 - Arrow Function </h1>
+            <hr/>
+            <h2>Função Normal</h2>
+
+            <p id="f1"></p>
+
+            <hr/>
+
+            <h2>Arrow Function</h2>
+
+            <p id="f2"></p>
+
+            <hr/>
+
+            <h2>Funções Anônimas</h2>
+
+            <p id="f3"></p>
+
+            <hr/>
+
+            <h2>Arrow Function Sem Return</h2>
+
+            <p id="f4"></p>
+
+            <hr/>
+
+            <h2>Arrow Function Sem Parâmetro</h2>
+
+            <p id="f5"></p>
+
+            <hr/>
+
+            <h2>Arrow Function com retorno de objeto</h2>
+
+            <p id="f6"></p>
+
+            <script>
+              //função normal
+                function soma(n1,n2){
+                  return n1 + n2
+                }
+                document.getElementById('f1').innerHTML = soma(2,2)
+
+                //função com arrow function
+                let sum = (n1, n2) =>{
+                  return n1 + n2
+                }
+                document.getElementById('f2').innerHTML = sum(8,5)
+
+                //função anonima
+                let sum2 = function(n1, n2) {
+                  return n1 + n2
+                }
+                document.getElementById('f3').innerHTML = sum2(50,10)
+
+                //arrow function sem return
+                let sum4 = (n1, n2) =>  n1 + n2
+                document.getElementById('f4').innerHTML = sum4(3000,100)
+
+                //arrow function sem parametros
+                let hello = () =>  'Hello world!!!'
+                document.getElementById('f5').innerHTML = hello()
+
+                //arrow function com retorno de objeto
+                let pessoa = () =>  {
+                  return { nome: "Alifi Cleiton", idade:"26 anos"}
+                }
+                document.getElementById('f6').innerHTML = pessoa().nome
+
+
+            </script>
+  
+</body>
+</html>
